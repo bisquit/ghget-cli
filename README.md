@@ -5,8 +5,8 @@
 # ghget
 
 <a href="https://www.npmjs.com/package/ghget-cli"><img src="https://img.shields.io/npm/v/ghget-cli"></a>
-[![CI](https://github.com/bisquit/ghget/actions/workflows/ci.yml/badge.svg)](https://github.com/bisquit/ghget/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/bisquit/ghget/branch/main/graph/badge.svg?token=CLG9UC6RG9)](https://codecov.io/gh/bisquit/ghget)
+[![CI](https://github.com/bisquit/ghget-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/bisquit/ghget-cli/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/bisquit/ghget-cli/branch/main/graph/badge.svg?token=CLG9UC6RG9)](https://codecov.io/gh/bisquit/ghget-cli)
 
 Download a directory or file from a GitHub URL you are viewing.
 
@@ -33,7 +33,7 @@ To keep it simple and robust, we are taking advantage of the CLI's authenticatio
 You can quickly try with `npx`
 
 ```sh
-npx ghget-cli@latest https://github.com/bisquit/ghget/tree/main/sample
+npx ghget-cli@latest https://github.com/bisquit/ghget-cli/tree/main/sample
 ```
 
 or install globally
@@ -73,10 +73,10 @@ pnpm add -g ghget-cli
 Hit `ghget <url>`.
 
 ```sh
-ghget https://github.com/bisquit/ghget/tree/main/sample
+ghget https://github.com/bisquit/ghget-cli/tree/main/sample
 ```
 
-See [examples](https://github.com/bisquit/ghget/blob/main/e2e/README.md#for-github).
+See [examples](https://github.com/bisquit/ghget-cli/blob/main/e2e/README.md#for-github).
 
 ## How it works
 

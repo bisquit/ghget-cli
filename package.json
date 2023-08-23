@@ -65,10 +65,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bisquit/ghget.git"
+    "url": "https://github.com/bisquit/ghget-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/bisquit/ghget/issues"
+    "url": "https://github.com/bisquit/ghget-cli/issues"
   },
   "keywords": [
     "cli",

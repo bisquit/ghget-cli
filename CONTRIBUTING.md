@@ -6,7 +6,7 @@ pnpm i
 
 # Run src (index.ts) directly
 pnpm dev
-pnpm dev https://github.com/bisquit/ghget/tree/main/sample/dir-1
+pnpm dev https://github.com/bisquit/ghget-cli/tree/main/sample/dir-1
 ```
 
 ### Unit Testing
@@ -40,7 +40,7 @@ If you installed published version, be sure removing it to avoid confliction.
 
 ```sh
 pnpm ls -g
-pnpm rm -g ghget
+pnpm rm -g ghget-cli
 ```
 
 ## publish

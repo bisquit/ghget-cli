@@ -10,7 +10,7 @@ Curretly, E2E is hand-testing for cross patterns.
 
 ```sh
 # remove installed version
-pnpm rm -g ghget
+pnpm rm -g ghget-cli
 
 # install latest dependencies
 pnpm i
@@ -38,24 +38,24 @@ Also, authenticate GitHub CLI and GLab CLI.
 
 ```sh
 # GitHub x directory
-ghget https://github.com/bisquit/ghget/tree/main/sample
+ghget https://github.com/bisquit/ghget-cli/tree/main/sample
 #==> sample
 
 # GitHub x file
-ghget https://github.com/bisquit/ghget/blob/main/sample/README.md
+ghget https://github.com/bisquit/ghget-cli/blob/main/sample/README.md
 #==> README.md
 
 # GitHub x root
-ghget https://github.com/bisquit/ghget
+ghget https://github.com/bisquit/ghget-cli
 #==> ghget
 
 # GitHub x cancel
-ghget https://github.com/bisquit/ghget # Then cancel confirm with `No`
+ghget https://github.com/bisquit/ghget-cli # Then cancel confirm with `No`
 #==> 'Cancelled.'
-ghget https://github.com/bisquit/ghget # Then hit Ctrl + C
+ghget https://github.com/bisquit/ghget-cli # Then hit Ctrl + C
 #==> 'Cancelled.'
 
 # GitHub x error
-ghget https://github.com/bisquit/ghget/tree/m
+ghget https://github.com/bisquit/ghget-cli/tree/m
 #==> 'ERROR'
 ```
