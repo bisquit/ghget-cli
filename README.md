@@ -20,6 +20,8 @@ The corresponding CLI must be installed and authenticated.
 <details>
 <summary>Why install CLI?</summary>
 
+<br>
+
 This tool uses GitHub or GitLab rest api to fetch repository archive.
 It is possible to authenticate with an access token, but an additional token must be issued, which must then be passed to the tool.
 
@@ -39,6 +41,8 @@ or install globally
 <details>
 <summary>npm</summary>
 
+<br>
+
 ```sh
 npm i -g ghget
 ```
@@ -47,6 +51,8 @@ npm i -g ghget
 <details>
 <summary>yarn</summary>
 
+<br>
+
 ```sh
 yarn global add ghget
 ```
@@ -54,6 +60,8 @@ yarn global add ghget
 
 <details>
 <summary>pnpm</summary>
+
+<br>
 
 ```sh
 pnpm add -g ghget
