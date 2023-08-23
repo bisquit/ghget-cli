@@ -4,7 +4,7 @@
 
 # ghget
 
-<a href="https://www.npmjs.com/package/@ghget/cli"><img src="https://img.shields.io/npm/v/@ghget/cli"></a>
+<a href="https://www.npmjs.com/package/ghget-cli"><img src="https://img.shields.io/npm/v/ghget-cli"></a>
 [![CI](https://github.com/bisquit/ghget/actions/workflows/ci.yml/badge.svg)](https://github.com/bisquit/ghget/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/bisquit/ghget/branch/main/graph/badge.svg?token=CLG9UC6RG9)](https://codecov.io/gh/bisquit/ghget)
 
@@ -33,7 +33,7 @@ To keep it simple and robust, we are taking advantage of the CLI's authenticatio
 You can quickly try with `npx`
 
 ```sh
-npx @ghget/cli@latest https://github.com/bisquit/ghget/tree/main/sample
+npx ghget-cli@latest https://github.com/bisquit/ghget/tree/main/sample
 ```
 
 or install globally
@@ -44,7 +44,7 @@ or install globally
 <br>
 
 ```sh
-npm i -g @ghget/cli
+npm i -g ghget-cli
 ```
 </details>
 
@@ -54,7 +54,7 @@ npm i -g @ghget/cli
 <br>
 
 ```sh
-yarn global add @ghget/cli
+yarn global add ghget-cli
 ```
 </details>
 
@@ -64,7 +64,7 @@ yarn global add @ghget/cli
 <br>
 
 ```sh
-pnpm add -g @ghget/cli
+pnpm add -g ghget-cli
 ```
 </details>
 
