@@ -1,7 +1,7 @@
 {
   "name": "ghget",
   "description": "Download a directory or file from a GitHub url",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
