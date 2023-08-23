@@ -8,22 +8,14 @@
 [![CI](https://github.com/bisquit/ghget/actions/workflows/ci.yml/badge.svg)](https://github.com/bisquit/ghget/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/bisquit/ghget/branch/main/graph/badge.svg?token=CLG9UC6RG9)](https://codecov.io/gh/bisquit/ghget)
 
-Download a directory or file from a repository URL you are viewing:
-
-- Single command, any URL
-- Support both GitHub and GitLab
-- Cross platform (macOS, Windows)
+Download a directory or file from a GitHub URL you are viewing.
 
 ## Requirements
 
 The corresponding CLI must be installed and authenticated.
 
 - For GitHub, install [GitHub CLI](https://cli.github.com/)
-  - then [`gh auth login`](https://cli.github.com/manual/gh_auth_login) 
-- For GitLab, install [GLab](https://gitlab.com/gitlab-org/cli)
-  - then [`glab auth login`](https://gitlab.com/gitlab-org/cli#authentication)
-
-You only need to install what you use.
+  - then [`gh auth login`](https://cli.github.com/manual/gh_auth_login)
 
 <details>
 <summary>Why install CLI?</summary>
@@ -44,17 +36,29 @@ npx ghget@latest https://github.com/bisquit/ghget/tree/main/sample
 
 or install globally
 
+<details>
+<summary>npm</summary>
+
 ```sh
 npm i -g ghget
 ```
+</details>
+
+<details>
+<summary>yarn</summary>
 
 ```sh
 yarn global add ghget
 ```
+</details>
+
+<details>
+<summary>pnpm</summary>
 
 ```sh
 pnpm add -g ghget
 ```
+</details>
 
 ## Usage
 

@@ -2,8 +2,8 @@
 
 Curretly, E2E is hand-testing for cross patterns.
 
-- Platform (Mac, Win)
-- Provider (GitHub, GitLab)
+- Platform (Mac)
+- Provider (GitHub)
 - Download (directory, file, entire repository, cancel, error)
 
 ## Setup
@@ -15,8 +15,8 @@ pnpm rm -g ghget
 # install latest dependencies
 pnpm i
 
-# Code validation
-pnpm validate
+# Static analysis
+pnpm staticcheck
 
 # build
 pnpm build
@@ -59,33 +59,3 @@ ghget https://github.com/bisquit/ghget # Then hit Ctrl + C
 ghget https://github.com/bisquit/ghget/tree/m
 #==> 'ERROR'
 ```
-
-#### for GitLab
-
-```sh
-# GitLab x directoy
-ghget https://gitlab.com/bisquit-lab/ghget-test/-/tree/main/sample
-#==> sample
-
-# GitLab x file
-ghget https://gitlab.com/bisquit-lab/ghget-test/-/tree/main/sample/README.md
-#==> README.md
-
-# GitLab x root
-ghget https://gitlab.com/bisquit-lab/ghget-test
-#==> ghget-test
-
-# GitLab x cancel
-ghget https://gitlab.com/bisquit-lab/ghget-test # Then cancel confirm with `No`
-#==> 'Cancelled.'
-ghget https://gitlab.com/bisquit-lab/ghget-test # Then hit Ctrl + C
-#==> 'Cancelled.'
-
-# GitLab x error
-ghget https://gitlab.com/bisquit-lab/ghget-test/-/tree/m
-#==> 'ERROR'
-```
-
-### on Win
-
-Same as Mac
