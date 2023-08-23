@@ -21,11 +21,11 @@ export const downloader: Downloader = async ({ repo, rest, archiveDir }) => {
     possibleRefs.map(async (ref, i) => {
       await mkdir(`${archiveDir}/${i}`);
       const archiveDist = createFileComponents(
-        `${archiveDir}/${i}/archive.zip`
+        `${archiveDir}/${i}/archive.zip`,
       );
       await getArchive({ repo, ref, redirectTo: archiveDist.filepath });
       return { ref, archive: archiveDist };
-    })
+    }),
   );
 
   const subpath = rest.replace(resolvedRef, '');

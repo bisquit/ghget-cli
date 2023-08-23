@@ -10,7 +10,7 @@ Curretly, E2E is hand-testing for cross patterns.
 
 ```sh
 # remove installed version
-pnpm rm -g rpget
+pnpm rm -g ghget
 
 # install latest dependencies
 pnpm i
@@ -38,25 +38,25 @@ Also, authenticate GitHub CLI and GLab CLI.
 
 ```sh
 # GitHub x directory
-rpget https://github.com/bisquit/rpget/tree/main/sample
+ghget https://github.com/bisquit/ghget/tree/main/sample
 #==> sample
 
 # GitHub x file
-rpget https://github.com/bisquit/rpget/blob/main/sample/README.md
+ghget https://github.com/bisquit/ghget/blob/main/sample/README.md
 #==> README.md
 
 # GitHub x root
-rpget https://github.com/bisquit/rpget
-#==> rpget
+ghget https://github.com/bisquit/ghget
+#==> ghget
 
 # GitHub x cancel
-rpget https://github.com/bisquit/rpget # Then cancel confirm with `No`
+ghget https://github.com/bisquit/ghget # Then cancel confirm with `No`
 #==> 'Cancelled.'
-rpget https://github.com/bisquit/rpget # Then hit Ctrl + C
+ghget https://github.com/bisquit/ghget # Then hit Ctrl + C
 #==> 'Cancelled.'
 
 # GitHub x error
-rpget https://github.com/bisquit/rpget/tree/m
+ghget https://github.com/bisquit/ghget/tree/m
 #==> 'ERROR'
 ```
 
@@ -64,25 +64,25 @@ rpget https://github.com/bisquit/rpget/tree/m
 
 ```sh
 # GitLab x directoy
-rpget https://gitlab.com/bisquit-lab/rpget-test/-/tree/main/sample
+ghget https://gitlab.com/bisquit-lab/ghget-test/-/tree/main/sample
 #==> sample
 
 # GitLab x file
-rpget https://gitlab.com/bisquit-lab/rpget-test/-/tree/main/sample/README.md
+ghget https://gitlab.com/bisquit-lab/ghget-test/-/tree/main/sample/README.md
 #==> README.md
 
 # GitLab x root
-rpget https://gitlab.com/bisquit-lab/rpget-test
-#==> rpget-test
+ghget https://gitlab.com/bisquit-lab/ghget-test
+#==> ghget-test
 
 # GitLab x cancel
-rpget https://gitlab.com/bisquit-lab/rpget-test # Then cancel confirm with `No`
+ghget https://gitlab.com/bisquit-lab/ghget-test # Then cancel confirm with `No`
 #==> 'Cancelled.'
-rpget https://gitlab.com/bisquit-lab/rpget-test # Then hit Ctrl + C
+ghget https://gitlab.com/bisquit-lab/ghget-test # Then hit Ctrl + C
 #==> 'Cancelled.'
 
 # GitLab x error
-rpget https://gitlab.com/bisquit-lab/rpget-test/-/tree/m
+ghget https://gitlab.com/bisquit-lab/ghget-test/-/tree/m
 #==> 'ERROR'
 ```
 

@@ -6,7 +6,7 @@ pnpm i
 
 # Run src (index.ts) directly
 pnpm dev
-pnpm dev https://github.com/bisquit/rpget/tree/main/sample/dir-1
+pnpm dev https://github.com/bisquit/ghget/tree/main/sample/dir-1
 ```
 
 ### Unit Testing
@@ -33,14 +33,14 @@ pnpm build --watch
 pnpm build:debug --watch
 
 # Then, cd any directory
-rpget
+ghget
 ```
 
 If you installed published version, be sure removing it to avoid confliction.
 
 ```sh
 pnpm ls -g
-pnpm rm -g rpget
+pnpm rm -g ghget
 ```
 
 ## publish

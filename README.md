@@ -2,11 +2,11 @@
   <img src="./assets/screenshot.png" width="70%" />
 </div>
 
-# rpget
+# ghget
 
-<a href="https://www.npmjs.com/package/rpget"><img src="https://img.shields.io/npm/v/rpget"></a>
-[![CI](https://github.com/bisquit/rpget/actions/workflows/ci.yml/badge.svg)](https://github.com/bisquit/rpget/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/bisquit/rpget/branch/main/graph/badge.svg?token=CLG9UC6RG9)](https://codecov.io/gh/bisquit/rpget)
+<a href="https://www.npmjs.com/package/ghget"><img src="https://img.shields.io/npm/v/ghget"></a>
+[![CI](https://github.com/bisquit/ghget/actions/workflows/ci.yml/badge.svg)](https://github.com/bisquit/ghget/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/bisquit/ghget/branch/main/graph/badge.svg?token=CLG9UC6RG9)](https://codecov.io/gh/bisquit/ghget)
 
 Download a directory or file from a repository URL you are viewing:
 
@@ -39,32 +39,32 @@ To keep it simple and robust, we are taking advantage of the CLI's authenticatio
 You can quickly try with `npx`
 
 ```sh
-npx rpget@latest https://github.com/bisquit/rpget/tree/main/sample
+npx ghget@latest https://github.com/bisquit/ghget/tree/main/sample
 ```
 
 or install globally
 
 ```sh
-npm i -g rpget
+npm i -g ghget
 ```
 
 ```sh
-yarn global add rpget
+yarn global add ghget
 ```
 
 ```sh
-pnpm add -g rpget
+pnpm add -g ghget
 ```
 
 ## Usage
 
-Hit `rpget <url>`.
+Hit `ghget <url>`.
 
 ```sh
-rpget https://github.com/bisquit/rpget/tree/main/sample
+ghget https://github.com/bisquit/ghget/tree/main/sample
 ```
 
-See [examples](https://github.com/bisquit/rpget/blob/main/e2e/README.md#for-github).
+See [examples](https://github.com/bisquit/ghget/blob/main/e2e/README.md#for-github).
 
 ## How it works
 

@@ -21,31 +21,31 @@ describe('unzip()', () => {
   test('dir', async () => {
     await unzip(
       resolve(fixtureDir, 'sample.dir.zip'),
-      resolve(testDir, 'case-dir')
+      resolve(testDir, 'case-dir'),
     );
 
     expect((await stat(resolve(testDir, 'case-dir/file-1'))).isFile()).toBe(
-      true
+      true,
     );
     expect((await stat(resolve(testDir, 'case-dir/dir-1'))).isDirectory()).toBe(
-      true
+      true,
     );
     expect(
-      (await stat(resolve(testDir, 'case-dir/dir-1/dir-2'))).isDirectory()
+      (await stat(resolve(testDir, 'case-dir/dir-1/dir-2'))).isDirectory(),
     ).toBe(true);
     expect(
-      (await stat(resolve(testDir, 'case-dir/dir-1/file-2'))).isFile()
+      (await stat(resolve(testDir, 'case-dir/dir-1/file-2'))).isFile(),
     ).toBe(true);
   });
 
   test('file', async () => {
     await unzip(
       resolve(fixtureDir, 'sample.file.zip'),
-      resolve(testDir, 'case-file')
+      resolve(testDir, 'case-file'),
     );
 
     expect((await stat(resolve(testDir, 'case-file/file-1'))).isFile()).toBe(
-      true
+      true,
     );
   });
 });

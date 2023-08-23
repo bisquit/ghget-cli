@@ -10,7 +10,7 @@ import {
 import { Provider, RepositoryComponentsWithRest } from '../types';
 
 export async function parseUrl(
-  url: string
+  url: string,
 ): Promise<RepositoryComponentsWithRest & { provider: Provider }> {
   if (url.startsWith('https://github.com/')) {
     return {
@@ -25,12 +25,12 @@ export async function parseUrl(
   } else if (url.startsWith('https://bitbucket.org/')) {
     throw new Error('bitbucket is not supported.');
   } else {
-    throw new Error('url is not correct. `rpget -h` and see example.');
+    throw new Error('url is not correct. `ghget -h` and see example.');
   }
 }
 
 export async function parseGithubUrl(
-  url: string
+  url: string,
 ): Promise<RepositoryComponentsWithRest> {
   const repoRegex = createRegExp(
     'https://github.com/',
@@ -42,15 +42,15 @@ export async function parseGithubUrl(
     maybe(
       anyOf('tree/', 'blob/'),
       oneOrMore(char).groupedAs('rest'),
-      maybe('/').at.lineEnd()
-    )
+      maybe('/').at.lineEnd(),
+    ),
   );
 
   const match = url.match(repoRegex);
   const repo = match?.groups.repo;
   if (!repo) {
     throw new Error(
-      'url is not a correct Github repository. `rpget -h` and see example.'
+      'url is not a correct Github repository. `ghget -h` and see example.',
     );
   }
 
@@ -59,7 +59,7 @@ export async function parseGithubUrl(
 }
 
 export async function parseGitlabUrl(
-  url: string
+  url: string,
 ): Promise<RepositoryComponentsWithRest> {
   const repoRegex = createRegExp(
     'https://gitlab.com/',
@@ -71,15 +71,15 @@ export async function parseGitlabUrl(
     maybe(
       anyOf('-/tree/', '-/blob/'),
       oneOrMore(char).groupedAs('rest'),
-      maybe('/').at.lineEnd()
-    )
+      maybe('/').at.lineEnd(),
+    ),
   );
 
   const match = url.match(repoRegex);
   const repo = match?.groups.repo;
   if (!repo) {
     throw new Error(
-      'url is not a correct Gitlab repository. `rpget -h` and see example.'
+      'url is not a correct Gitlab repository. `ghget -h` and see example.',
     );
   }
 

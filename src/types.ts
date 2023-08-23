@@ -5,7 +5,7 @@ export type RepositoryComponentsBase = {
    * repository name with an account or organization
    *
    * @example
-   * "bisquit/rpget"
+   * "bisquit/ghget"
    */
   repo: string;
 };

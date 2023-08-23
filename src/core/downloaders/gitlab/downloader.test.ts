@@ -17,22 +17,22 @@ vi.mock('../../../utils/mkdir.ts', async () => {
 describe('github downloader', () => {
   test('repository', async () => {
     const result = await downloader({
-      repo: 'bisquit/rpget',
+      repo: 'bisquit/ghget',
       archiveDir: 'tmp',
     });
 
-    expect(result.repo).toBe('bisquit/rpget');
+    expect(result.repo).toBe('bisquit/ghget');
     expect(result.archive).toBeDefined();
   });
 
   test('directory', async () => {
     const result = await downloader({
-      repo: 'bisquit/rpget',
+      repo: 'bisquit/ghget',
       rest: 'main/sample/x',
       archiveDir: 'tmp',
     });
 
-    expect(result.repo).toBe('bisquit/rpget');
+    expect(result.repo).toBe('bisquit/ghget');
     expect(result.ref).toBe('main');
     expect(result.subpath).toBe('/sample/x');
     expect(result.archive).toBeDefined();

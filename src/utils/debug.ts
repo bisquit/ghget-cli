@@ -12,7 +12,7 @@ export function debugLog(message: string | Record<string, string>) {
       '[DEBUG]\n' +
         Object.entries(message)
           .map(([key, value]) => `${key}: ${value}`)
-          .join(`\n`)
+          .join(`\n`),
     );
   }
 }
