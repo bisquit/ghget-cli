@@ -16,7 +16,7 @@ const argv = cli({
 
   help: {
     description: pkg.description,
-    examples: ['ghget https://github.com/bisquit/ghget/tree/main/sample'],
+    examples: ['ghget https://github.com/bisquit/ghget-cli/tree/main/sample'],
   },
 });
 
