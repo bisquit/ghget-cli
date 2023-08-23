@@ -1,5 +1,5 @@
 {
-  "name": "ghget",
+  "name": "@ghget/cli",
   "description": "Download a directory or file from a GitHub url",
   "version": "0.0.1",
   "license": "MIT",
