@@ -1,0 +1,15 @@
+changelog:
+  categories:
+    - title: Breaking changes
+      labels:
+        - 'Type: breaking change'
+    - title: Features
+      labels:
+        - 'Type: feat'
+    - title: Fixes and Improvements
+      labels:
+        - 'Type: fix'
+        - 'Type: improve'
+    - title: Others
+      labels:
+        - "*"
